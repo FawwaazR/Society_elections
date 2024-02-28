@@ -1,16 +1,16 @@
 var president = [0, 0, 0];
-var treasurer = [0, 0, 0];
+var treasurer = [0, 0];
 var secretary = [0, 0, 0];
-var events = [0, 0];
-var marketing = [0, 0];
-var sports = [0, 0, 0];
+var events = [0, 0, 0];
+// var marketing = [0, 0];
+// var sports = [0, 0, 0];
 
-var president_c = ["Loubna", "Amy", "Re-open Nominations"];
-var treasurer_c = ["Aksheen", "Sadiq", "Re-open Nominations"];
-var secretary_c = ["Aksheen", "Rania", "Re-open Nominations"];
-var events_c = ["Zahra", "Re-open Nominations"];
-var marketing_c = ["Asma", "Re-open Nominations"];
-var sports_c = ["Rania", "Zahra", "Re-open Nominations"];
+var president_c = ["Taksheel", "Yashveer", "Re-open Nominations"];
+var treasurer_c = ["Arpana", "Re-open Nominations"];
+var secretary_c = ["Estelle", "Vashish", "Re-open Nominations"];
+var events_c = ["Shanvi", "Vashish", "Re-open Nominations"];
+// var marketing_c = ["Asma", "Re-open Nominations"];
+// var sports_c = ["Rania", "Zahra", "Re-open Nominations"];
 
 
 function register(vote, vote_bank){
@@ -81,8 +81,8 @@ function voting(){
             publish(treasurer, treasurer_c, "treasurer");
             publish(secretary, secretary_c, "secretary");
             publish(events, events_c, "events officer");
-            publish(marketing, marketing_c, "marketing officer");
-            publish(sports, sports_c, "sports officer");
+            // publish(marketing, marketing_c, "marketing officer");
+            // publish(sports, sports_c, "sports officer");
 
             $("p").addClass("results");
             return
@@ -91,15 +91,15 @@ function voting(){
         var tres = parseInt($(".treasurer input").val());
         var sec = parseInt($(".secretary input").val());
         var eve = parseInt($(".events input").val());
-        var mark = parseInt($(".marketing input").val());
-        var sp = parseInt($(".sports input").val());
+        // var mark = parseInt($(".marketing input").val());
+        // var sp = parseInt($(".sports input").val());
 
         register(pres, president);
         register(tres, treasurer);
         register(sec, secretary);
         register(eve, events);
-        register(mark, marketing);
-        register(sp, sports);
+        // register(mark, marketing);
+        // register(sp, sports);
 
         $("input").val("");    
     });
