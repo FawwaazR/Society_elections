@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    font-family: cursive;
+    color: lightseagreen;
+}
+
+.nominees {  
+    background-color: lightblue;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 25px 5px;
+    justify-content: center;
+}
+
+h2 {
+    font-family: helvetica;
+    color: black;
+}
+
+p {
+    align-items: center;
+    color: red;
+    font-family: fantasy;
+}
+
+input {
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons {
+    text-align: center;
+    justify-content: center;
+}
+
+#submit {
+    margin-top: 10px;
+}
+
+.results {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    align-items: center;
+}
